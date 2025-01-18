@@ -1,7 +1,8 @@
 {
   "name": "raycaster",
   "scripts": {
-    "start": "esbuild ./src/app.js --bundle --servedir=public --outdir=public"
+    "start": "esbuild ./src/app.js --bundle --servedir=public --outdir=public",
+    "build": "mkdir -p docs && esbuild ./src/app.js --bundle --outdir=docs && cp public/* docs/"
   },
   "author": "Manuel Spagnolo",
   "license": "MIT",
