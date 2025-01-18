@@ -1,14 +1,10 @@
 {
   "name": "raycaster",
-  "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "esbuild ./src/app.js --bundle --servedir=public --outdir=public"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Manuel Spagnolo",
+  "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.24.2"
   }
